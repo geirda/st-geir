@@ -25,7 +25,7 @@ Clone this repo and compile from source:
 	$ git clone https://github.com/geirda/st-geir.git
 	$ cd st-geir
 	$ git checkout openbsd
-	$ sudo make clean install
+	$ doas make clean install
 
 
 ![suckless](https://raw.githubusercontent.com/geirda/Arch/master/suckless/suckless.png)
