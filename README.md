@@ -1,4 +1,4 @@
-# st-geir 0.8.4
+# st-geir 0.9
 
 Patches included:
 
@@ -16,11 +16,11 @@ Hack font is usually found in your distro's repo. For Debian-based systems:
 
 	$ sudo apt install fonts-hack
 
+Hack Nerd Font can be downloaded from https://www.nerdfonts.com/font-downloads
+
 For Arch-based systems:
 
 	$ sudo pacman -S ttf-hack ttf-hack-nerd
-
-Hack Nerd Font can be downloaded from https://www.nerdfonts.com/font-downloads
 
 ## Installation
 

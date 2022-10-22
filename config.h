@@ -10,7 +10,6 @@ static char *font = "Hack:size=12:antialias=true:autohint=true";
 static char *font2[] = {
 	"Hack Nerd Font:size=12:antialias=true:autohint=true",
 };
-
 static int borderpx = 2;
 
 /*
@@ -128,8 +127,8 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#93a4a6",
 	"#555555",
-	"black",
-	"#839496",
+	"#839496", /* default foreground colour */
+	"black", /* default background colour */
 };
 
 
@@ -137,11 +136,11 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 259;
-unsigned int defaultbg = 258;
-static unsigned int defaultcs = 256;
+unsigned int defaultfg = 258;
+unsigned int defaultbg = 259;
+unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
-unsigned int bg = 258, bgUnfocused = 16;
+unsigned int bg = 259, bgUnfocused = 16;
 
 /*
  * Default shape of cursor
@@ -185,8 +184,8 @@ static uint forcemousemod = ShiftMask;
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
-	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = 5},      0, /* !alt */ -1 },
-	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = 5},      0, /* !alt */ -1 },
+	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = 5},		0, /* !alt */ -1 },
+	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = 5},		0, /* !alt */ -1 },
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },

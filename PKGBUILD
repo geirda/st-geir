@@ -1,7 +1,7 @@
 # Maintainer: Geir Damstuen
 pkgname="st-geir"
-pkgver=0.8.4
-pkgrel=2
+pkgver=0.9
+pkgrel=1
 pkgdesc="A simple virtual terminal emulator for X"
 url="https://github.com/geirda/st-geir.git"
 arch=('i686' 'x86_64')
